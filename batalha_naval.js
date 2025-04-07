@@ -9,6 +9,21 @@ function TabuleiroNaval() {
     return tabuleiro;
 }
 
+function mostrarTabuleiro(){
+    var mostrar = parseInt(prompt("Mostrar tabuleiro?\n 1=Sim\n 2=Não\n:"));
+    if(mostrar === 1){
+        console.log (tabuleiro)
+    }
+}
+
+
+function reiniciar(){
+    var reinicio = parseInt(prompt("Deseja reiniciar?\n 1=Sim\n 2=Não\n:"));
+    if(reinicio === 1){
+        Atirar()
+    }
+}
+
 
 var tabuleiro = TabuleiroNaval();
 for (let n = 0; n < 5; n++) {
@@ -62,4 +77,5 @@ function Atirar() {
 }
 
 Atirar();
-
+mostrarTabuleiro();
+reiniciar();
